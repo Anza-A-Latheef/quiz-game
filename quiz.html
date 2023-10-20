@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <section id="home">
+        <button id="start" onclick="displayQuiz()">start the quiz</button>
+    </section>
+
+    <section id="quiz">
+        <section class="left">        <!--MCQ Questions-->
+            <ul>     
+                <li>
+                <h1>Q1.What does HTML stand for?</h1><br/>
+                <input type="radio" name="question1" id="correct1" value="Hyper Text Markup Language"><span>Hyper Text Markup Language</span><br/>
+                <input type="radio" name="question1" id="incorrect1"value="Hyper Text Marketing Language"><span>Hyper Text Marketing Language</span><br/>
+                <input type="radio" name="question1" id="incorrect1"value="Hyper Text Marking Language "><span>Hyper Text Marking Language</span><br/>
+                <input type="radio" name="question1" id="incorrect1"value="Hyper Text Markup Leveler"><span>Hyper Text Markup Leveler</span><br/>
+                <div id="ans1">
+
+                </div>
+                </li>
+
+                <li>
+                <h1>Q2.Which of the following is used to read an HTML page and render it?</h1><br/>
+                <input type="radio" name="question2" id="incorrect2"value="Web Server"><span>Web Server</span><br/>
+                <input type="radio" name="question2" id="correct2" value="Web browser"><span>Web Browser</span><br/>
+                <input type="radio" name="question2" id="incorrect2"value="Web Network"><span>Web Network</span><br/>
+                <input type="radio" name="question2" id="incorrect2"value="Web Matrix"><span>Web Matrix</span><br/>
+                <div id="ans2">
+
+                </div>
+                </li>
+
+                <li>
+                <h1>Q3.Which of the following tag is used for inserting the largest heading in HTML?</h1><br/>
+                <input type="radio" name="question3" id="incorrect3"value="head"><span>head</span><br/>
+                <input type="radio" name="question3" id="incorrect3"value="&lth6&gt" ><span>&lth6&gt</span><br/>
+                <input type="radio" name="question3" id="incorrect3"value="heading"><span>heading</span><br/>
+                <input type="radio" name="question3" id="correct3" value="&lth1&gt"><span>&lth1&gt</span><br/>
+                <div id="ans3">
+                    
+                </div>
+                </li>
+
+                <li>
+                <h1>Q4.What is DOM in HTML?</h1><br/>
+                <input type="radio" name="question4" id="incorrect4"><span>Language dependent application programming</span><br/>
+                <input type="radio" name="question4" id="incorrect4"><span>Hierarchy of objects in ASP.NET</span><br/>
+                <input type="radio" name="question4" id="correct4" value="Convention for representing and interacting with objects in html documents"><span>Convention for representing and interacting with objects in html documents</span><br/>
+                <input type="radio" name="question4" id="incorrect4"> <span>Application programming interface</span><br/>
+                <div id="ans4">
+
+                </div>
+                </li>
+
+                <li>
+                    <h1>Q5.How do we write comments in HTML?</h1><br/>
+                    <input type="radio" name="question5" id="incorrect5"><span>&lt/……&gt</span><br/>
+                    <input type="radio" name="question5" id="correct5" value=" &lt !…… &gt "><span>&lt!……&gt</span><br/>
+                    <input type="radio" name="question5" id="incorrect5"><span>&lt/……/&gt</span><br/>
+                    <input type="radio" name="question5" id="incorrect5"><span>&lt……!&gt</span><br/>
+                    <div id="ans5">
+
+                    </div>
+                </li>
+            </ul>
+            <input type="submit" name="submit" id="stop" value="Submit Answers" onclick="result()">
+        </section>
+        <section class="right">
+            <div class="top">
+                <!-- <div id="timer" > -->
+                    <div id="num">
+                        <!-- countdown Timer -->
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="mid">
+                <div id="scores">
+                    <!-- display score -->
+                </div>
+            </div>
+            <div class="bottom">
+                <!-- reset button -->
+                <button class="resetbtn" onclick="reset()">Reset Quiz</button>
+            </div>
+        </section>
+    </section>
+    <script src="quiz.js"></script>
+</body>
+</html>
